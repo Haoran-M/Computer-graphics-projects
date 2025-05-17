@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0061)https://yaksoy.github.io/introvc/assignment1/hw1template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CMPT 361 HW1 - Haoran Miao</title>
+
+</head> <body data-new-gr-c-s-check-loaded="14.1198.0" data-gr-ext-installed="">
+
+<h2>CMPT 361 - Homework 1</h2>
+
+<p>Name: <b>Haoran Miao</b></p>
+<p>Student No: <b>301542189</b></p>
+<p>Date: 2024-9-28</p>
+
+<h4>Honor statement:</h4>
+<p>I have not cheated in any way when doing this assignment, I did it on my own. 
+  I may have asked questions about the assignment on Coursys, 
+  I know that’s totally fine and even encouraged. 
+  I also already know that this class is graded on a curve.
+  I realize that if I cheat and by some miracle not get caught, 
+  any increase in my grade will in turn shift the curve and result in lower grades for my classmates.
+  Any undeserved extra grade would come at the cost of all others. 
+  That’s horrible! I would never do it.</p>
+
+<h4>1: Take two photographs</h4>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP.png" alt="HP" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP.png" alt="LP" width="300" height="300">
+
+
+<h4>2: Compute frequency representations</h4>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-freq.png" alt="HP-freq" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-freq.png" alt="LP-freq" width="300" height="300">
+
+<h4>3: Visualize kernels</h4>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/gaus-surf.png" alt="gaus-surf" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/dog-surf.png" alt="dog-surf" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-filt.png" alt="HP-filt" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-filt-freq.png" alt="HP-filt-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-filt.png" alt="LP-filt" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-filt-freq.png" alt="LP-filt-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-dogfilt.png" alt="HP-dogfilt" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-dogfilt-freq.png" alt="HP-dogfilt-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-dogfilt.png" alt="LP-dogfilt" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-dogfilt-freq.png" alt="LP-dogfilt-freq" width="300" height="300">
+
+<h4>4: Anti-aliasing</h4>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub2.png" alt="HP-sub2" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub2-freq.png" alt="HP-sub2-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-sub2.png" alt="LP-sub2" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-sub2-freq.png" alt="LP-sub2-freq" width="300" height="300">
+<p>The high pass image did not have much aliasing, the edges are blured and pixeled but smoothed well
+  The frequency graph for the high pass image shows significant unbalanced energy,
+  The axis on the frequency graph are blured and the center of the graph is dark, 
+  this indicates the graph had some aliasing, but do to the load of edges on the graph,
+   it did not have good aliasing.
+  The low pass image did not have much change due to the minimal edges in the graph.
+  The frequency domain has a bright center along with clear axis, 
+  this shows the aliasing is very minimal, which is what i expect.
+</p>
+
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub4.png" alt="HP-sub4" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub4-freq.png" alt="HP-sub4-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-sub4.png" alt="LP-sub4" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-sub4-freq.png" alt="LP-sub4-freq" width="300" height="300">
+<p>The high pass image did not change much compared to the sub2 image,
+  edges are more blured if we look closer, this is due to the shrink in size.
+  the frequency domain was more darker compared with sub2, which shows a bit more aliasing then before.
+  The low pass image remained the same, due to very few components on the picture,
+  there are less things that got lost during the desizing. 
+  The frequency domain looks the same compared with the sub2,
+  however it was a bit brighter on the center and along the y axis.
+  This indicates minimal aliasing.
+</p>
+
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub2-aa.png" alt="HP-sub2-aa" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub2-aa-freq.png" alt="HP-sub2-aa-freq" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub4-aa.png" alt="HP-sub4-aa" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-sub4-aa-freq.png" alt="HP-sub4-aa-freq" width="300" height="300">
+<p>For the gaussian kernels i used 11,1.5 for sub2, and 21, 2 for sub4
+  I used a smaller kernel for sub2 and a larger kernel for sub4 so they would have more effect on anti aliasing.
+  the frequency domains shows that the anti aliasing did not go very well,
+  we can see a very large center area on the graph, and thick axis representing poor anti aliasing.
+  but comparing sub2 and sub4 we can see that the center of sub4 frequency graph is smaller then sub2
+  and the axis are less thick compared to sub2, which shows we have improved anti aliasing on sub4. 
+  It seems like the pictures before did not have much aliasing but when we applied the gaussian kernels
+  The aliasing increased and anti aliasing did not make the graph better then before.
+  Adding the gaussian filters increased aliasing as the components are more pixelized.
+</p>
+
+<h4>5: Canny edge detection thresholding</h4>
+
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-canny-optimal.png" alt="HP-canny-optimal" width="500" height="500">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-canny-lowlow.png" alt=" HP-canny-lowlow" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-canny-highlow.png" alt=" HP-canny-highlow" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-canny-lowhigh.png" alt=" HP-canny-lowhigh" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/HP-canny-highhigh.png" alt=" HP-canny-highhigh" width="300" height="300">
+<p>i choose the matlab default threshold for the optimal threshold as it captures almost all of the edges for the pictures
+  For the high high and low high, i can see some more edges are detected. 
+  the picture for high pass is the picture of the sfu bullet board. 
+  the high high and low high have detected some edges that are one the posters,
+  these edges can and cannot be considered as edges.
+  the high low and low low have extended and added more details on the missing edges.
+  but the extending edges works on the edges on the posters as well with creates too many edges detected.
+</p>
+
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-canny-optimal.png" alt="LP-canny-optimal" width="500" height="500">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-canny-lowlow.png" alt=" LP-canny-lowlow" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-canny-highlow.png" alt=" LP-canny-highlow" width="300" height="300">
+<br><br>
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-canny-lowhigh.png" alt=" LP-canny-lowhigh" width="300" height="300">
+<img src="./CMPT 361 HW1 - Haoran Miao_files/LP-canny-highhigh.png" alt=" LP-canny-highhigh" width="300" height="300">
+<p>same as the above i used matlabs default threshold for the optimal threshold.
+  because the low pass picture does contain much detail the threshold for this are very small 
+  the low low and low high did not have much of a difference compared with the optimal graph
+  the image for the lowpass is an apple on the table 
+  the low high and high high have detected more edges on the table,
+  these edges are patterns of the wood, and could barly be seen on the original picture.
+  The wrinkles on the apple have also been detected by all the methods. 
+</p>
+
+
+ </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
